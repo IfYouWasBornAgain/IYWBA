@@ -1,0 +1,122 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Nanum Gothic", sans-serif;
+}
+
+body {
+}
+
+.wallDeco {
+    position: absolute;
+    z-index: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.square1 {
+    width: 100%;
+    height: 10rem;
+    background-color: #9db3ed;
+}
+
+.square2 {
+    width: 100%;
+    height: 20rem;
+    background-color: #ff90ee;
+}
+
+.square3 {
+    width: 100%;
+    height: 20rem;
+    background-color: #97ddcd;
+}
+
+.triangle1 {
+    width: 100%;
+    border-left: 100vw solid rgba(0, 0, 0, 0);
+    border-top: 20rem solid #9db3ed;
+    position: absolute;
+}
+
+.triangle2 {
+    width: 100%;
+    border-right: 100vw solid rgba(0, 0, 0, 0);
+    border-top: 20rem solid #ff90ee;
+    position: absolute;
+}
+
+.triangle3 {
+    width: 100%;
+    border-left: 100vw solid rgba(0, 0, 0, 0);
+    border-top: 20rem solid #97ddcd;
+}
+
+.wallpaper {
+    padding: 3rem 1rem;
+    position: relative;
+    z-index: 5;
+}
+
+.formContainer {
+    background-color: white;
+    max-width: 40rem;
+    margin: 0 auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.44);
+    padding: 2rem;
+    line-height: 2rem;
+}
+
+.pageTitle {
+    font-size: 1.3rem;
+}
+
+.subTitle {
+    font-size: 0.7rem;
+    font-weight: 100;
+}
+
+ol {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.21);
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+li {
+    margin-top: 2rem;
+}
+
+label,input {
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    margin: 0 auto;
+    display: block;
+    background-color: #3457b5;
+    border: none;
+    border-radius: 0.2rem;
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.44);
+    transition: all 0.2s;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.85);
+}
+
+footer {
+    width: 100%;
+    height: 10rem;
+    background-color: rgb(101, 101, 101);
+}
