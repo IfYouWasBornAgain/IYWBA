@@ -1,14 +1,16 @@
 const bodyParser = require('body-parser'); 
 const path = require('path');
-const result = require('./DB/result');
+require('./DB/result');
 
 module.exports = (router) => {
    
     router.get('/', function(req, res) {
+        const result = require('./DB/result');
         res.sendFile(path.join(__dirname, 'front-end', 'index.html'));
     });
     
     router.post('/', function(req, res) {
+        const result = require('./DB/result');
         let q1 = req.body.question1;
         let q2 = req.body.question2;
         let q3 = req.body.question3;
